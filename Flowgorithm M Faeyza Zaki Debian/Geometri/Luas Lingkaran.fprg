@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="RPL"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-06 10:16:57 AM"/>
+        <attribute name="created" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMDgtMDY7MDk6MTg6NTkgQU07MjI5Nw=="/>
+        <attribute name="edited" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMDgtMDY7MTA6MTY6NTcgQU07MjsyMzk0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="phi, r, luas" type="Real" array="False" size=""/>
+            <assign variable="phi" expression="3.14"/>
+            <output expression="&quot;Masukan Nilai Jari-Jari&quot;" newline="True"/>
+            <input variable="r"/>
+            <assign variable="Luas" expression="phi * r * r"/>
+            <output expression="&quot;Jadi hasil luas lingkaran adalah&quot; &amp;luas" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="RPL"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-13 11:50:32 AM"/>
+        <attribute name="created" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMDgtMTM7MTE6MTI6MTEgQU07MjI3MA=="/>
+        <attribute name="edited" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMDgtMTM7MTE6NTA6MzIgQU07NjsyMzg4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="NilaiA, NilaiB" type="Integer" array="False" size=""/>
+            <declare name="Hasil1, Hasil2, Hasil3, Hasil4, Hasil5, Hasil6" type="Boolean" array="False" size=""/>
+            <assign variable="NilaiA" expression="123"/>
+            <assign variable="NilaiB" expression="321"/>
+            <comment text="LEBIH DARI"/>
+            <assign variable="Hasil1" expression="NilaiA&gt;NilaiB"/>
+            <comment text="KURANG DARI"/>
+            <assign variable="Hasil2" expression="NilaiA&lt;NilaiB"/>
+            <comment text="LEBIH DARI SAMA DENGAN"/>
+            <assign variable="Hasil3" expression="NilaiA&gt;=NilaiB"/>
+            <comment text="KURANG DARI SAMA DENGAN"/>
+            <assign variable="Hasil4" expression="NilaiA&lt;=NilaiB"/>
+            <comment text="SAMA DENGAN SAMA DENGAN"/>
+            <assign variable="Hasil5" expression="NilaiA==NilaiB"/>
+            <comment text="TIDAK SAMA SAMA DENGAN"/>
+            <assign variable="Hasil6" expression="NilaiA!=NilaiB"/>
+            <output expression="&quot; Hasilnya yang ke 1 adalah= &quot;  &amp;Hasil1&amp; toChar(13)&amp;&#13;&#10;&quot;Hasilnya yang ke 2 adalah= &quot;  &amp;Hasil2&amp; toChar(13)&amp;&#13;&#10;&quot; Hasilnya yang ke 3 adalah= &quot;  &amp;Hasil3&amp; toChar(13)&amp;&#13;&#10;&quot;Hasilnya yang ke 4 adalah= &quot;  &amp;Hasil4&amp; toChar(13)&amp;&#13;&#10;&quot; Hasilnya yang ke 5 adalah= &quot;  &amp;Hasil5&amp; toChar(13)&amp;&#13;&#10;&quot;Hasilnya yang ke 6 adalah= &quot;  &amp;Hasil6" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

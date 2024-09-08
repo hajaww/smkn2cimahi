@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="RPL"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-12 11:00:34 AM"/>
+        <attribute name="created" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMDgtMTI7MTA6MjI6NDIgQU07MjI3Mw=="/>
+        <attribute name="edited" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMDgtMTI7MTE6MDA6MzQgQU07NDsyMzgy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="wadahA, wadahB, wadahC" type="String" array="False" size=""/>
+            <output expression="&quot;Bagaimana caranya agar cairan di wadah A tertukar dengan cairan di wadah B? Sebutkan Tahap Awalnya&quot;" newline="True"/>
+            <input variable="WadahA"/>
+            <output expression="&quot;Cairan Biru Wadah A telah dimasukan ke Wadah C&quot;" newline="True"/>
+            <output expression="&quot;Lalu apa yang harus dilakukan?&quot;" newline="True"/>
+            <input variable="wadahB"/>
+            <output expression="&quot;Cairan Kuning Wadah B sudah dimasukan ke Wadah A&quot;" newline="True"/>
+            <output expression="&quot;Setelah Cairan Biru wadah A berada di wadah C dan Cairan Kuning wadah B sudah berada di wadah A apa yang harus dilakukan?&quot;" newline="True"/>
+            <input variable="wadahC"/>
+            <output expression="&quot;Cairan Biru Wadah A yang berada di Wadah C dimasukan ke dalam Wadah B yang kosong&quot;" newline="True"/>
+            <output expression="&quot;Jadi Cairan Biru di Wadah A yang sudah berada di wadah B dan Cairan Kuning Wadah B yang sudah berada di Wadah A SUKSES TERTUKAR&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

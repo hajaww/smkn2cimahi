@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="RPL"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-06 11:24:52 AM"/>
+        <attribute name="created" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMDgtMDY7MTA6MjU6NDMgQU07MjI4MA=="/>
+        <attribute name="edited" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMDgtMDY7MTE6MjQ6NTIgQU07NzsyMzk0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Nama" type="String" array="False" size=""/>
+            <declare name="gaji, bonus, tunjangan, total" type="Integer" array="False" size=""/>
+            <output expression="&quot;Masukan nama anda&quot;" newline="True"/>
+            <input variable="Nama"/>
+            <output expression="&quot;Berapa Gaji Pokok Anda&quot;" newline="True"/>
+            <input variable="gaji"/>
+            <assign variable="bonus" expression="gaji * 5/100"/>
+            <assign variable="tunjangan" expression="gaji * 10/100"/>
+            <assign variable="total" expression="gaji + bonus + tunjangan"/>
+            <output expression="&quot; Nama : &quot; &amp;nama&amp; ToChar(13)&amp;&#13;&#10;&quot; Gaji pokok : &quot; &amp;gaji&amp; ToChar(13)&amp;&#13;&#10;&quot; Bonus 5% dari gaji pokok : &quot; &amp;bonus&amp; ToChar(13)&amp;&#13;&#10;&quot; Tunjangan 10% dari gaji pokok : &quot; &amp;tunjangan&amp; ToChar(13)&amp;&#13;&#10;&quot; Total gaji yang didapat: &quot; &amp;total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

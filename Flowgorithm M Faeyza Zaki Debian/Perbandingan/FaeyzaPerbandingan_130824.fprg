@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="RPL"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-13 11:01:56 AM"/>
+        <attribute name="created" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMDgtMTM7MTA6MjI6MjggQU07MjI3OA=="/>
+        <attribute name="edited" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMDgtMTM7MTE6MDE6NTYgQU07NDsyMzg4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="LEBIH DARI"/>
+            <declare name="nilaiA, nilaiB" type="Integer" array="False" size=""/>
+            <declare name="hasil" type="Boolean" array="False" size=""/>
+            <assign variable="nilaiA" expression="25"/>
+            <assign variable="nilaiB" expression="24"/>
+            <assign variable="Hasil" expression="NilaiA&gt;NilaiB"/>
+            <output expression="Hasil" newline="True"/>
+            <comment text="KURANG DARI"/>
+            <declare name="NilaiC, NilaiD" type="Integer" array="False" size=""/>
+            <declare name="hasil2" type="Boolean" array="False" size=""/>
+            <assign variable="nilaiC" expression="26"/>
+            <assign variable="nilaiD" expression="20"/>
+            <assign variable="hasil2" expression="NilaiC&lt;NilaiD"/>
+            <output expression="hasil2" newline="True"/>
+            <comment text="LEBIH DARI SAMA DENGAN"/>
+            <declare name="NilaiE, NilaiF" type="Integer" array="False" size=""/>
+            <declare name="hasil3" type="Boolean" array="False" size=""/>
+            <assign variable="nilaiE" expression="26"/>
+            <assign variable="nilaiF" expression="26"/>
+            <assign variable="hasil3" expression="NilaiE&gt;=NilaiF"/>
+            <output expression="hasil3" newline="True"/>
+            <comment text="KURANG DARI SAMA DENGAN"/>
+            <declare name="NilaiG, NilaiH" type="Integer" array="False" size=""/>
+            <declare name="hasil4" type="Boolean" array="False" size=""/>
+            <assign variable="nilaiG" expression="22"/>
+            <assign variable="nilaiH" expression="26"/>
+            <assign variable="hasil4" expression="NilaiG&lt;=NilaiH"/>
+            <output expression="hasil4" newline="True"/>
+            <comment text="SAMA DENGAN SAMA DENGAN"/>
+            <declare name="NilaiI, NilaiJ" type="Integer" array="False" size=""/>
+            <declare name="hasil5" type="Boolean" array="False" size=""/>
+            <assign variable="nilaiI" expression="27"/>
+            <assign variable="nilaiJ" expression="26"/>
+            <assign variable="hasil5" expression="NilaiI==NilaiJ"/>
+            <output expression="hasil5" newline="True"/>
+            <comment text="TIDAK SAMA DENGAN"/>
+            <declare name="NilaiK, NilaiL" type="Integer" array="False" size=""/>
+            <declare name="hasil6" type="Boolean" array="False" size=""/>
+            <assign variable="nilaiK" expression="26"/>
+            <assign variable="nilaiL" expression="26"/>
+            <assign variable="hasil6" expression="NilaiK!=NilaiL"/>
+            <output expression="hasil6" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

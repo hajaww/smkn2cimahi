@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="RPL"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-13 12:06:31 PM"/>
+        <attribute name="created" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMDgtMTM7MTE6NTA6NDMgQU07MjI3Nw=="/>
+        <attribute name="edited" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMDgtMTM7MTI6MDY6MzEgUE07MTsyMzk5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="username, password" type="String" array="False" size=""/>
+            <declare name="hasil, hasil2" type="Boolean" array="False" size=""/>
+            <assign variable="Username" expression="&quot;dadang123&quot;"/>
+            <assign variable="password" expression="&quot;dadangkasep&quot;"/>
+            <assign variable="hasil" expression="username= &quot;dadang123&quot; || password=&quot;dadangkasep&quot;"/>
+            <assign variable="hasil2" expression="username= &quot;dadang123&quot; &amp;&amp; password=&quot;dadangkasep&quot;"/>
+            <output expression="hasil &amp;tochar(13)&#13;&#10;&amp;hasil2" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

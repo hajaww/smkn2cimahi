@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="RPL"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-07-30 11:23:30 AM"/>
+        <attribute name="created" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMDctMzA7MDk6MTY6NTQgQU07MjI4Ng=="/>
+        <attribute name="edited" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMDctMzA7MTE6MjM6MzAgQU07MzsyMzgx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Nama, Kelas, Alamat" type="String" array="False" size=""/>
+            <output expression="&quot;Silahkan Masukan Nama Anda&quot;" newline="True"/>
+            <input variable="nama"/>
+            <output expression="&quot;Silahkan Masukan Kelas Anda&quot;" newline="True"/>
+            <input variable="Kelas"/>
+            <output expression="&quot;Silahkan Masukan Alamat Anda&quot;" newline="True"/>
+            <input variable="Alamat"/>
+            <output expression="&quot;nama :&quot; &amp;nama&amp; ToChar(13)&amp;&#13;&#10;&quot;kelas :&quot; &amp;kelas&amp; ToChar(13)&amp;&#13;&#10;&quot;alamat :&quot; &amp;alamat" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="RPL"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-05 09:54:58 AM"/>
+        <attribute name="created" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMDctMzA7MDg6MjQ6MjkgQU07MjI4Ng=="/>
+        <attribute name="edited" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMDctMzA7MDg6NTc6MTEgQU07MTsyMzkx"/>
+        <attribute name="edited" value="UlBMO1BDXzIwLVJQTF8yOzIwMjQtMDgtMDU7MDk6NTQ6NTggQU07MTsyMzk1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Luas Persegi Panjang"/>
+            <declare name="Luas, panjang, lebar" type="Integer" array="False" size=""/>
+            <output expression="&quot;Silahkan Masukan Nilai panjang (dalam cm)&quot;" newline="True"/>
+            <input variable="panjang"/>
+            <output expression="&quot;Silahkan Masukan Nilai lebar (dalam cm)&quot;" newline="True"/>
+            <input variable="lebar"/>
+            <assign variable="Luas" expression="panjang *  lebar"/>
+            <output expression="&quot;Jadi hasil perhitungan Luas Persegi panjang dengan panjang : &quot;&amp;panjang&amp;&quot; lebar &quot;&amp;lebar&amp;&quot; adalah: &quot; &amp;Luas" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

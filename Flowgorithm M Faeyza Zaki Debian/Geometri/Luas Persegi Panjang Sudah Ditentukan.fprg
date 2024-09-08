@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="RPL"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-06 08:44:25 AM"/>
+        <attribute name="created" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMDgtMDY7MDg6MjY6MTEgQU07MjI4Mw=="/>
+        <attribute name="edited" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMDgtMDY7MDg6NDQ6MjUgQU07MTsyMzk2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Panjang, lebar, luas" type="Integer" array="False" size=""/>
+            <assign variable="panjang" expression="12"/>
+            <assign variable="lebar" expression="15"/>
+            <assign variable="Luas" expression="Panjang * Lebar"/>
+            <output expression="&quot;Jadi hasil perhitungan Luas Persegi panjang dengan panjang : &quot;&amp;panjang&amp;&quot; lebar &quot;&amp;lebar&amp;&quot; adalah: &quot; &amp;Luas" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

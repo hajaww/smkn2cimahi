@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="RPL"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-07-30 09:15:58 AM"/>
+        <attribute name="created" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMDctMzA7MDk6MDM6MzIgQU07MjI3OA=="/>
+        <attribute name="edited" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMDctMzA7MDk6MTU6NTggQU07MTsyMzk3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="luas persegi"/>
+            <declare name="luas, sisi" type="Integer" array="False" size=""/>
+            <output expression="&quot;Masukan Nilai sisi&quot;" newline="True"/>
+            <input variable="sisi"/>
+            <assign variable="Luas" expression="sisi * sisi"/>
+            <output expression="&quot;Jadi hasil perhitungan Luas Persegi dengan sisi : &quot;&amp;sisi&amp;&quot; adalah: &quot;&amp;Luas" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

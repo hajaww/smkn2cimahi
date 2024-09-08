@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="RPL"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-13 09:14:38 AM"/>
+        <attribute name="created" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMDgtMTM7MDg6MTk6MzQgQU07MjI4OA=="/>
+        <attribute name="edited" value="UlBMO1BDXzE1LVJQTF8yOzIwMjQtMDgtMTM7MDk6MDI6MjIgQU07MTsyMzgy"/>
+        <attribute name="edited" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMDgtMTM7MDk6MTQ6MzggQU07NDsyMzk5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="serigala, kambing, kol, petani" type="String" array="False" size=""/>
+            <output expression="&quot;Bagaimana cara memindahkan semua hal di sebelah kiri ke sebelah kanan dengan ketentuan semua aman&quot;" newline="True"/>
+            <assign variable="petani" expression="&quot;kiri&quot;"/>
+            <assign variable="kol" expression="&quot;kiri&quot;"/>
+            <assign variable="serigala" expression="&quot;kiri&quot;"/>
+            <assign variable="kambing" expression="&quot;kiri&quot;"/>
+            <output expression="&quot;Pindahkan petani dan kambing secara bersamaan ke sebelah kanan dengan rakit&quot;" newline="True"/>
+            <assign variable="petani" expression="&quot;kanan&quot;"/>
+            <assign variable="kambing" expression="&quot;kanan&quot;"/>
+            <output expression="&quot;Kambing sudah berada di sebelah kanan lalu petani kembali ke sebelah kiri&quot;" newline="True"/>
+            <assign variable="petani" expression="&quot;kiri&quot;"/>
+            <output expression="&quot;Kemudian petani kembali ke sebelah kiri dan membawa serigala lalu serigala dibawa bersama petani ke kanan&quot;" newline="True"/>
+            <assign variable="petani" expression="&quot;kanan&quot;"/>
+            <assign variable="serigala" expression="&quot;kanan&quot;"/>
+            <output expression="&quot;Kemudian angkut kambing kembali ke rakit dan dibawa ke sebelah kanan bersama petani&quot;" newline="True"/>
+            <assign variable="kambing" expression="&quot;kiri&quot;"/>
+            <assign variable="petani" expression="&quot;kiri&quot;"/>
+            <output expression="&quot;setelah petani berada di sebelah kiri ia kemudian menurunkan kambing dan membawa kol bersamanya ke sebelah kanan&quot;" newline="True"/>
+            <assign variable="petani" expression="&quot;kanan&quot;"/>
+            <assign variable="kol" expression="&quot;kanan&quot;"/>
+            <output expression="&quot;setelah petani menurunkan kol dari rakit ke sebelah kanan kemudian petani berangkat ke sebelah kiri sendiri&quot;" newline="True"/>
+            <assign variable="petani" expression="&quot;kiri&quot;"/>
+            <output expression="&quot;Setelah petani di sebelah kiri ia membawa kambing ke rakit dan menyebrang dengan rakit ke sebelah kanan&quot;" newline="True"/>
+            <assign variable="petani" expression="&quot;kanan&quot;"/>
+            <assign variable="kambing" expression="&quot;kanan&quot;"/>
+            <output expression="&quot;dan selesai lah petani dapat membawa ketiganya ke sebelah kanan tanpa ada satupun yang termakan&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

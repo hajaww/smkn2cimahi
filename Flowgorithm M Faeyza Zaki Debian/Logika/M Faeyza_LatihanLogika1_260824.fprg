@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="RPL"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-26 09:51:40 AM"/>
+        <attribute name="created" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMDgtMjY7MDk6MjE6NDcgQU07MjI5MA=="/>
+        <attribute name="edited" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMDgtMjY7MDk6NTE6NDAgQU07MTsyMzk0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c, d" type="Integer" array="False" size=""/>
+            <declare name="result" type="Boolean" array="False" size=""/>
+            <assign variable="a" expression="10"/>
+            <assign variable="b" expression="5"/>
+            <assign variable="c" expression="7"/>
+            <assign variable="d" expression="8"/>
+            <assign variable="result" expression="((b+c&gt;d)&amp;&amp;(a-d&lt;c))"/>
+            <output expression="result" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
