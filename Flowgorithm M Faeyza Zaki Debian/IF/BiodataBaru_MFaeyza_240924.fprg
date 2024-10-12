@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="RPL"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-24 10:16:26 AM"/>
+        <attribute name="created" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMDktMjQ7MDg6MTg6MzUgQU07MjI5MQ=="/>
+        <attribute name="edited" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMDktMjQ7MTA6MTY6MjYgQU07MzsyMzky"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="umurBian" type="Real" array="False" size=""/>
+            <declare name="namaBian, jurusanBian" type="String" array="False" size=""/>
+            <output expression="&quot;Masukan nama kamu: &quot;" newline="True"/>
+            <input variable="namaBian"/>
+            <output expression="&quot;Plih jurusan yang anda tempati, ketik 1-5 untuk memilih &quot;&amp; ToChar(13)&amp;&#13;&#10;&quot;- PPLG &quot;&amp; ToChar(13)&amp;&#13;&#10;&quot;- Teknik Kimia Industri &quot;&amp; ToChar(13)&amp;&#13;&#10;&quot;- Teknik Permesinan &quot;&amp; ToChar(13)&amp;&#13;&#10;&quot;-  DKV &quot;&amp; ToChar(13)&amp;&#13;&#10;&quot;- Animasi&quot;&amp; ToChar(13)&amp;&#13;&#10;&quot;- Mekatronika &quot;" newline="True"/>
+            <input variable="jurusanBian"/>
+            <if expression="jurusanBian=&quot;1&quot;">
+                <then>
+                    <assign variable="jurusanBian" expression="&quot;PPLG&quot;"/>
+                </then>
+                <else>
+                    <if expression="jurusanBian=&quot;2&quot;">
+                        <then>
+                            <assign variable="jurusanBian" expression="&quot;Kimia Industri&quot;"/>
+                        </then>
+                        <else>
+                            <if expression="jurusanBian=&quot;3&quot;">
+                                <then>
+                                    <assign variable="jurusanBian" expression="&quot;Teknik Mesin&quot;"/>
+                                </then>
+                                <else>
+                                    <if expression="jurusanBian=&quot;4&quot;">
+                                        <then>
+                                            <assign variable="jurusanBian" expression="&quot;DKV&quot;"/>
+                                        </then>
+                                        <else>
+                                            <if expression="jurusanBian=&quot;5&quot;">
+                                                <then>
+                                                    <assign variable="jurusanBian" expression="&quot;Animasi&quot;"/>
+                                                </then>
+                                                <else>
+                                                    <if expression="jurusanBian=&quot;6&quot;">
+                                                        <then>
+                                                            <assign variable="jurusanBian" expression="&quot;Mekatronika&quot;"/>
+                                                        </then>
+                                                        <else>
+                                                            <output expression="&quot;Pilih 1-6 untuk jurusan&quot;" newline="True"/>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;Masukan Umurmu!&quot;" newline="True"/>
+            <input variable="umurBian"/>
+            <if expression="umurBian&lt;17">
+                <then>
+                    <output expression="&quot;Umurmu termasuk kategori Anak-Anak&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="umurBian&gt;=17 &amp;&amp; umurBian&lt;=20">
+                        <then>
+                            <output expression="&quot;Umurmu termasuk kategori Remaja&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="umurBian&gt;=20">
+                                <then>
+                                    <output expression="&quot;Umurmu termasuk kategori  Dewasa&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Masukan yg benar&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;namamu:&quot; &amp;namaBian&amp;ToChar(13)&amp;&#13;&#10;&quot;jurusanmu:&quot; &amp;JurusanBian&amp;ToChar(13)&amp;&#13;&#10;&quot;umurmu:&quot; &amp;umurBian" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

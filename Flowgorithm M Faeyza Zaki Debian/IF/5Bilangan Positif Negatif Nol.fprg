@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="RPL"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-27 11:07:04 AM"/>
+        <attribute name="created" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMDgtMjc7MTE6MDA6NDQgQU07MjI3OA=="/>
+        <attribute name="edited" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMDgtMjc7MTE6MDc6MDQgQU07MTsyMzg5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="bilangan" type="Integer" array="False" size=""/>
+            <output expression="&quot;Masukan Nilai Bilangan nya&quot;" newline="True"/>
+            <input variable="bilangan"/>
+            <if expression="bilangan&lt;0">
+                <then>
+                    <output expression="&quot;Bilangan Negatif&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="bilangan&gt;0">
+                        <then>
+                            <output expression="&quot;Bilangan Positif&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Bilangan Nol&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

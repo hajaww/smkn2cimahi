@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="RPL"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-23 11:19:44 AM"/>
+        <attribute name="created" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMDktMjM7MTA6MjI6NDAgQU07MjI3NA=="/>
+        <attribute name="edited" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMDktMjM7MTE6MTk6NDQgQU07MjsyMzk0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="tarifBian, tambahanBian, jamBian, totalBian, jmlBian" type="Integer" array="False" size=""/>
+            <output expression="&quot;Parkir Mobil dikenakan tarif sebesar: 10000/jam &quot; &amp;ToChar(13)&amp;&#13;&#10;&quot;Jika parkir lebih dari 4 jam maka akan terkena tarif tambahan sebesar: 5000 &quot;" newline="True"/>
+            <assign variable="tarifBian" expression="10000"/>
+            <assign variable="jamBian" expression="6"/>
+            <assign variable="jmlbian" expression="tarifBian*jamBian"/>
+            <if expression="jamBian&gt;4">
+                <then>
+                    <assign variable="tambahanBian" expression="(jamBian-4)*5000"/>
+                </then>
+                <else>
+                    <assign variable="tambahanBian" expression="0"/>
+                </else>
+            </if>
+            <assign variable="totalBian" expression="jmlBian+tambahanBian"/>
+            <output expression="&quot;Karena kamu parkir selama 6 jam maka total yg harus dibayar sebesar= Rp.&quot; &amp;totalbian" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

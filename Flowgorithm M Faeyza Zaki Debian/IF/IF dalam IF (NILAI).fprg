@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="RPL"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-24 11:04:57 AM"/>
+        <attribute name="created" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMDktMjQ7MTE6MDA6NDAgQU07MjI3Mg=="/>
+        <attribute name="edited" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMDktMjQ7MTE6MDQ6NTcgQU07MTsyMzky"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Nilai" type="Integer" array="False" size=""/>
+            <output expression="&quot;Masukan Nilai Anda&quot;" newline="True"/>
+            <input variable="Nilai"/>
+            <if expression="Nilai&gt;=70">
+                <then>
+                    <if expression="Nilai&gt;90">
+                        <then>
+                            <output expression="&quot;Nilai Sangat Baik&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Nilai Cukup Baik&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;Nilai Anda Kurang&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

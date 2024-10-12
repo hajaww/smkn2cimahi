@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="RPL"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-17 11:31:23 AM"/>
+        <attribute name="created" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMDktMTc7MTA6MTQ6MzggQU07MjI4NQ=="/>
+        <attribute name="edited" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMDktMTc7MTE6MzE6MjMgQU07MzsyMzg5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="wisataBian, hargaBian, diskonBian, biayatmbhBian, totalBian, orangBian, hargatravelBian, hargakonsumsiBian, totalkeseluruhanBian" type="Integer" array="False" size=""/>
+            <declare name="destinasiBian, kodeBian, travelBian, konsumsiBian" type="String" array="False" size=""/>
+            <output expression="&quot;Pilih destinasi (1.Bali = 2jt) (2.Lombok = 1.8jt) (3.Raja Ampat = 3jt)&quot;" newline="True"/>
+            <input variable="wisataBian"/>
+            <output expression="&quot;Berapa banyak orang yang akan berwisata?&quot;" newline="True"/>
+            <input variable="orangBian"/>
+            <if expression="wisataBian==1">
+                <then>
+                    <assign variable="destinasiBian" expression="&quot;Bali&quot;"/>
+                    <assign variable="hargaBian" expression="2000000"/>
+                </then>
+                <else>
+                    <if expression="wisataBian==2">
+                        <then>
+                            <assign variable="destinasiBian" expression="&quot;Lombok&quot;"/>
+                            <assign variable="hargaBian" expression="1800000"/>
+                        </then>
+                        <else>
+                            <if expression="wisataBian==3">
+                                <then>
+                                    <assign variable="destinasiBian" expression="&quot;Raja Ampat&quot;"/>
+                                    <assign variable="hargaBian" expression="3000000"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;KAMU HARUS MEMILIH DIANTARA 1-3&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <assign variable="totalBian" expression="hargaBian*orangBian"/>
+            <output expression="&quot;Apakah kamu memiliki kode promosi? (y/t)&quot;" newline="True"/>
+            <input variable="kodebian"/>
+            <if expression="kodebian==&quot;y&quot;">
+                <then>
+                    <assign variable="diskonBian" expression="totalBian*0.2"/>
+                </then>
+                <else>
+                    <if expression="kodebian==&quot;t&quot;">
+                        <then>
+                            <assign variable="diskonBian" expression="totalBian*0.1"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Kode yang anda masukan salah&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;Apakah kamu ingin menggunakan Travel? y/t&quot;" newline="True"/>
+            <input variable="travelBian"/>
+            <if expression="travelBian==&quot;y&quot;">
+                <then>
+                    <assign variable="hargatravelBian" expression="500000"/>
+                </then>
+                <else>
+                    <if expression="travelBian==&quot;t&quot;">
+                        <then>
+                            <assign variable="hargatravelBian" expression="0"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Travel yang anda masukan salah&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;Apakah kamu ingin tambahan konsumsi? y/t&quot;" newline="True"/>
+            <input variable="konsumsiBian"/>
+            <if expression="konsumsiBian==&quot;y&quot;">
+                <then>
+                    <assign variable="hargakonsumsiBian" expression="300000"/>
+                </then>
+                <else>
+                    <if expression="konsumsiBian==&quot;t&quot;">
+                        <then>
+                            <assign variable="hargakonsumsiBian" expression="0"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Konsumsi yang anda masukan salah&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <assign variable="totalkeseluruhanBian" expression="(totalbian-diskonbian)+hargatravelBian+hargakonsumsiBian"/>
+            <output expression="&quot;Kamu memilih destinasi : &quot; &amp;destinasiBian&amp; &quot; dengan jumlah orang : &quot; &amp;orangBian&amp; &quot; dengan harga &quot; &amp;totalBian&amp; &quot; dan mendapatkan diskon sebesar &quot; &amp;diskonBian&amp; &quot; Jadi jumlah pembayaran keseluruhan sebesar &quot; &amp;totalkeseluruhanBian" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

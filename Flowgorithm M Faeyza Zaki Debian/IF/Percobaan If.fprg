@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="RPL"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-14 10:11:07 AM"/>
+        <attribute name="created" value="UlBMO1BDXzAxLVJQTF8yOzIwMjQtMDgtMTQ7MDk6MTI6NDkgQU07MjI4MA=="/>
+        <attribute name="edited" value="UlBMO1BDXzAxLVJQTF8yOzIwMjQtMDgtMTQ7MTA6MTE6MDcgQU07MjsyMzc0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="NAMA, KELAS, JURUSAN" type="String" array="False" size=""/>
+            <declare name="NILAI" type="Integer" array="False" size=""/>
+            <output expression="&quot;MASUKAN NAMA&quot;" newline="True"/>
+            <input variable="NAMA"/>
+            <output expression="&quot;MASUKAN KELAS&quot;" newline="True"/>
+            <input variable="KELAS"/>
+            <output expression="&quot;MASUKAN JURUSAN&quot;" newline="True"/>
+            <input variable="JURUSAN"/>
+            <output expression="&quot;MASUKAN NILAI&quot;" newline="True"/>
+            <input variable="NILAI"/>
+            <if expression="NILAI&gt;=80">
+                <then>
+                    <output expression="&quot;ANDA LULUS DAN TIDAK REMED&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;ANDA TIDAK LULUS DAN REMED&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="RPL"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-24 11:25:30 AM"/>
+        <attribute name="created" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMDktMjQ7MTE6MjI6MjUgQU07MjI3OQ=="/>
+        <attribute name="edited" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMDktMjQ7MTE6MjU6MzAgQU07MTsyMzg2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="SuhuBian" type="Integer" array="False" size=""/>
+            <output expression="&quot;Berapa suhu air?&quot;" newline="True"/>
+            <input variable="SuhuBian"/>
+            <if expression="suhuBian&gt;0">
+                <then>
+                    <if expression="suhuBian&gt;100">
+                        <then>
+                            <output expression="&quot;Air mendidih&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Air belum mendidih&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;air membeku&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

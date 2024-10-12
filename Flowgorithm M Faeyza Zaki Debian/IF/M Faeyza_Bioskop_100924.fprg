@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="RPL"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-10 11:56:51 AM"/>
+        <attribute name="created" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMDktMTA7MDg6NTg6MTMgQU07MjI4Ng=="/>
+        <attribute name="edited" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMDktMTA7MTE6NTY6NTEgQU07MjsyMzg5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="bianFilm, bianjamout, bianhargaout, biansnackout" type="String" array="False" size=""/>
+            <declare name="biandiskon, bianharga, bianjmltiket, bianJam, bianhargatambahan, biansnack, biantotal, biantotaltiket" type="Integer" array="False" size=""/>
+            <assign variable="bianhargatambahan" expression="0"/>
+            <output expression="&quot;Jika anda ingin memilih genre film ketik 1 untuk AKSI ketik 2 untuk KOMEDIi ketik 3 untuk DRAMA&quot;" newline="True"/>
+            <input variable="bianFilm"/>
+            <if expression="bianFilm==&quot;1&quot;">
+                <then>
+                    <assign variable="bianfilm" expression="&quot;Anda Memilih Film Aksi &quot;"/>
+                </then>
+                <else>
+                    <if expression="bianFilm==&quot;2&quot;">
+                        <then>
+                            <assign variable="bianfilm" expression="&quot;Anda Memilih Film Komedi &quot;"/>
+                        </then>
+                        <else>
+                            <if expression="bianFilm==&quot;3&quot;">
+                                <then>
+                                    <assign variable="bianfilm" expression="&quot;Anda Memilih Film Drama &quot;"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Anda Salah Memilih Genre Film&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;Ingin menonton film di jam berapa (12:00,15:00,18:00) Jam ke 1-3&quot;" newline="True"/>
+            <input variable="bianJam"/>
+            <if expression="bianJam==1">
+                <then>
+                    <assign variable="bianjamout" expression="&quot;Kemudian memilih jam ke 1 yaitu jam 12:00&quot;"/>
+                </then>
+                <else>
+                    <if expression="bianJam==2">
+                        <then>
+                            <assign variable="bianjamout" expression="&quot;Kemudian memilih jam ke 2 yaitu jam 15:00&quot;"/>
+                        </then>
+                        <else>
+                            <if expression="bianJam==3">
+                                <then>
+                                    <assign variable="bianjamout" expression="&quot;Kemudian memilih jam ke 3 yaitu jam 18:00&quot;"/>
+                                    <output expression="&quot;Karena memilih jam ke 3 diatas jam 18.00 kamu mendapatkan tambahan harga sebesar Rp. 20.000&quot;" newline="True"/>
+                                    <assign variable="bianhargatambahan" expression="20000"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Anda salah memilih jam&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;Kelas apa yang akan anda pilih? Ketik 1 untuk Reguler Ketik 2 Untuk VIP&quot;" newline="True"/>
+            <input variable="bianHarga"/>
+            <if expression="bianharga==1">
+                <then>
+                    <assign variable="bianhargaout" expression="&quot;lalu Memilih Kelas Reguler dengan harga tiket Rp. 50.000&quot;"/>
+                    <assign variable="bianharga" expression="50000"/>
+                </then>
+                <else>
+                    <if expression="bianharga==2">
+                        <then>
+                            <assign variable="bianhargaout" expression="&quot;lalu Memilih Kelas VIP dengan harga tiket Rp. 100.000&quot;"/>
+                            <assign variable="bianharga" expression="100000"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Anda salah memilih Kelas tiket&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <assign variable="bianharga" expression="bianharga+bianhargatambahan"/>
+            <output expression="&quot;jadi harganya sebesar &quot; &amp;bianharga" newline="True"/>
+            <output expression="&quot;Berapa tiket yang ingin anda beli? &quot;" newline="True"/>
+            <input variable="bianjmltiket"/>
+            <assign variable="biantotaltiket" expression="(bianharga+bianhargatambahan)*bianjmltiket"/>
+            <if expression="bianjmltiket&gt;1">
+                <then>
+                    <output expression="&quot;Karena Pembelian Tiket Lebih dari 1 Kamu mendapat diskon sebesar 10%&quot;" newline="True"/>
+                    <assign variable="biandiskon" expression="biantotaltiket*0.1"/>
+                </then>
+                <else>
+                    <output expression="&quot;Maaf kamu tidak dapat diskon karena hanya membeli 1 tiket&quot;" newline="True"/>
+                    <assign variable="biandiskon" expression="0"/>
+                </else>
+            </if>
+            <assign variable="biandiskon" expression="bianharga-biandiskon"/>
+            <output expression="&quot; Apakah kamu ingin combo snack (ketik 1 popcorn + soda 30k) ; ( ketik 2nachos + minuman 35k) ketik 3 jika tidak&quot;" newline="True"/>
+            <input variable="biansnack"/>
+            <if expression="biansnack=1">
+                <then>
+                    <assign variable="biansnackout" expression="&quot;Kamu membeli snack combo 1 popcorn + soda dengan harga 30k&quot;"/>
+                    <assign variable="biansnack" expression="30000"/>
+                </then>
+                <else>
+                    <if expression="biansnack=2">
+                        <then>
+                            <assign variable="biansnackout" expression="&quot;Kamu membeli snack combo 1 popcorn + soda dengan harga 35k&quot;"/>
+                            <assign variable="biansnack" expression="35000"/>
+                        </then>
+                        <else>
+                            <assign variable="biansnackout" expression="&quot;Tidak membeli pake combo&quot;"/>
+                            <assign variable="biansnack" expression="0"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <assign variable="biantotal" expression="bianharga-biansnack"/>
+            <output expression="&quot;Jadi &quot; &amp;bianfilm&amp; &quot; &quot; &amp;bianjamout&amp; &quot; dan jumlah tiket sebanyak &quot; &amp;bianjmltiket&amp; &quot; dengan harga &quot; &amp;bianharga&amp; &quot; dan mendapat diskon sebesar &quot; &amp;biandiskon&amp; &quot; &quot; &amp;biansnackout&amp; &quot; jadi total nya sebesar &quot; &amp;biantotal" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

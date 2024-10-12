@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="RPL"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-24 10:47:47 AM"/>
+        <attribute name="created" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMDktMjQ7MTA6NDM6NTggQU07MjI4Nw=="/>
+        <attribute name="edited" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMDktMjQ7MTA6NDc6NDcgQU07MTsyMzk3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Bilangan" type="Integer" array="False" size=""/>
+            <output expression="&quot;Masukan Bilangan&quot;" newline="True"/>
+            <input variable="Bilangan"/>
+            <if expression="bilangan&gt;0">
+                <then>
+                    <if expression="bilangan%2=0">
+                        <then>
+                            <output expression="&quot;Bilangan positif genap&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Bilangan positif ganjil&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="bilangan==0">
+                        <then>
+                            <output expression="&quot;Bilangan ini NOL&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Bilangan Negatif&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

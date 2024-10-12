@@ -1,0 +1,118 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="RPL"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-07 08:30:07 PM"/>
+        <attribute name="created" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMTAtMDc7MDc6MTE6MjIgUE07MjI4Nw=="/>
+        <attribute name="edited" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMTAtMDc7MDg6MzA6MDcgUE07MzsyNDAy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="biancash, bianhargasatuan, bianjumlahbeli, bianjumlahbayar, Biandiskon, Biantotaldiskon, Biantotalbayar, Bianhargamakanan, Bianmakanan, Bianpaket, biantotalkeseluruhan" type="Integer" array="False" size=""/>
+            <output expression="&quot;Pilih Paket 1 &quot;&amp;Tochar(13)&amp; &quot; atau Paket 2&quot;" newline="True"/>
+            <output expression="&quot;Paket 1 berisi Ayam 20Ribu/Ekor dan Sapi 150Ribu/ekor &quot; &amp;ToChar(13)&amp;&#13;&#10;&quot;Paket 2 berisi Ikan 20ribu/Ekor dan Seafood 200Ribu &quot;" newline="True"/>
+            <input variable="bianpaket"/>
+            <assign variable="biancash" expression="600000"/>
+            <if expression="bianpaket=1">
+                <then>
+                    <output expression="&quot;Kamu memilih PAKET 1: &quot; &amp;Tochar(13)&amp;&#13;&#10;&quot;Sekarang pilih kembali ingin membeli Ayam(1) seharga 20ribu atau Sapi(2) seharga 150ribu&quot;" newline="True"/>
+                    <input variable="bianmakanan"/>
+                    <if expression="Bianmakanan=1">
+                        <then>
+                            <output expression="&quot;Seberapa banyak ayam yg akan kamu beli?&quot;" newline="True"/>
+                            <input variable="bianjumlahbeli"/>
+                            <assign variable="bianhargamakanan" expression="20000"/>
+                            <assign variable="bianjumlahbayar" expression="bianhargamakanan*bianjumlahbeli"/>
+                            <output expression="&quot;Kamu membeli ayam seharga 20Ribu/ekor, dengan jumlah ayam sebanyak &quot; &amp;bianjumlahbeli&amp; &quot; dengan harga &quot; &amp;bianjumlahbayar" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="bianmakanan=2">
+                                <then>
+                                    <output expression="&quot;Seberapa banyak sapi yg akan kamu beli?&quot;" newline="True"/>
+                                    <input variable="bianjumlahbeli"/>
+                                    <assign variable="bianhargamakanan" expression="150000"/>
+                                    <assign variable="bianjumlahbayar" expression="bianhargamakanan*bianjumlahbeli"/>
+                                    <output expression="&quot;Kamu membeli sapi seharga 150Ribu/ekor, dengan jumlah Sapi sebanyak &quot; &amp;bianjumlahbeli&amp; &quot; dengan harga &quot; &amp;bianjumlahbayar" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Pilih Ayam atau Sapi (1/2)&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                    <if expression="bianjumlahbayar&gt;=500000">
+                        <then>
+                            <assign variable="biandiskon" expression="bianjumlahbayar*0.1"/>
+                            <assign variable="Biantotaldiskon" expression="Bianjumlahbayar-biandiskon"/>
+                            <output expression="&quot;Selamat kamu mendapatkan diskon sebesar 10% dengan potongan &quot; &amp;Biandiskon" newline="True"/>
+                        </then>
+                        <else>
+                            <assign variable="biandiskon" expression="0"/>
+                            <assign variable="Biantotaldiskon" expression="Bianjumlahbayar-biandiskon"/>
+                            <output expression="&quot;Maaf kamu tidak dapat diskon&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="bianpaket=2">
+                        <then>
+                            <output expression="&quot;Kamu memilih PAKET 2: &quot; &amp;Tochar(13)&amp;&#13;&#10;&quot;Sekarang pilih kembali ingin membeli Ikan(1) seharga 40Ribu atau Seafood(2) seharga 200ribu&quot;" newline="True"/>
+                            <input variable="bianmakanan"/>
+                            <if expression="Bianmakanan=1">
+                                <then>
+                                    <output expression="&quot;Seberapa banyak ikan yg akan kamu beli?&quot;" newline="True"/>
+                                    <input variable="bianjumlahbeli"/>
+                                    <assign variable="bianhargamakanan" expression="40000"/>
+                                    <assign variable="bianjumlahbayar" expression="bianhargamakanan*bianjumlahbeli"/>
+                                    <output expression="&quot;Kamu membeli Ikan seharga 40Ribu/ekor, dengan jumlah ikan sebanyak &quot; &amp;bianjumlahbeli&amp; &quot; dengan harga &quot; &amp;bianjumlahbayar" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="bianmakanan=2">
+                                        <then>
+                                            <output expression="&quot;Seberapa banyak Seafood yg akan kamu beli?&quot;" newline="True"/>
+                                            <input variable="bianjumlahbeli"/>
+                                            <assign variable="bianhargamakanan" expression="200000"/>
+                                            <assign variable="bianjumlahbayar" expression="bianhargamakanan*bianjumlahbeli"/>
+                                            <output expression="&quot;Kamu membeli seafood seharga 200Ribu/ekor, dengan jumlah Seafood sebanyak &quot; &amp;bianjumlahbeli&amp; &quot; dengan harga &quot; &amp;bianjumlahbayar" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;Pilih Ikan atau Seafood (1/2)&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;Pilih Paket 1 atau Paket 2 (1/2)&quot;" newline="True"/>
+                        </else>
+                    </if>
+                    <if expression="bianjumlahbayar&gt;=400000">
+                        <then>
+                            <assign variable="biandiskon" expression="bianjumlahbayar*0.1"/>
+                            <assign variable="Biantotaldiskon" expression="Bianjumlahbayar-biandiskon"/>
+                            <output expression="&quot;Selamat kamu mendapatkan diskon sebesar 10% dengan potongan &quot; &amp;Biandiskon" newline="True"/>
+                        </then>
+                        <else>
+                            <assign variable="biandiskon" expression="0"/>
+                            <assign variable="Biantotaldiskon" expression="Bianjumlahbayar-biandiskon"/>
+                            <output expression="&quot;Maaf kamu tidak dapat diskon&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;Jadi Total yang harus dibayarkan sebesar: &quot; &amp;biantotaldiskon" newline="True"/>
+            <assign variable="biantotalkeseluruhan" expression="biancash-biantotaldiskon"/>
+            <if expression="biantotalkeseluruhan&gt;0">
+                <then>
+                    <output expression="&quot;Karena kamu membayar sebesar &quot;&amp;biancash&amp;&quot; maka kamu mendapatkan kembalian sebesar &quot; &amp;biantotalkeseluruhan" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Karena kamu membayar sebesar &quot;&amp;biancash&amp;&quot; maka pembayaran kamu kurang&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
