@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="RPL"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-09 12:02:38 PM"/>
+        <attribute name="created" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMDktMDk7MTA6NDA6NDMgQU07MjI4MQ=="/>
+        <attribute name="edited" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMDktMDk7MTI6MDI6MzggUE07MjsyNDA5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="namaBian, kategoriBian" type="String" array="False" size=""/>
+            <declare name="jumlunBian, harunBian, totharBian, diskonBian, distamBian, totdisBian, jmltotalBian" type="Integer" array="False" size=""/>
+            <output expression="&quot;Masukan Nama Anda&quot;" newline="True"/>
+            <input variable="namaBian"/>
+            <output expression="&quot;Masukan jumlah pembelian (unit) anda&quot;" newline="True"/>
+            <input variable="jumlunBian"/>
+            <output expression="&quot;Masukan kategori kamu ( A-C) &quot;" newline="True"/>
+            <input variable="kategoriBian"/>
+            <if expression="KategoriBian=&quot;A&quot;">
+                <then>
+                    <assign variable="harunBian" expression="2000"/>
+                    <assign variable="totharBian" expression="jumlunBian*harunBian"/>
+                    <assign variable="distamBian" expression="totharBian*0.05"/>
+                    <output expression="&quot;Jadi total harga sebesar &quot; &amp;totharbian&amp; &quot; dan mendapatkan diskon tambahan sebesar &quot; &amp;distambian" newline="True"/>
+                </then>
+                <else>
+                    <if expression="KategoriBian=&quot;B&quot;">
+                        <then>
+                            <assign variable="harunBian" expression="1500"/>
+                            <assign variable="totharBian" expression="jumlunBian*harunBian"/>
+                            <assign variable="distamBian" expression="totharBian*0.03"/>
+                            <output expression="&quot;Jadi total harga sebesar &quot; &amp;totharbian&amp; &quot; dan mendapatkan diskon tambahan sebesar &quot; &amp;distambian" newline="True"/>
+                        </then>
+                        <else>
+                            <assign variable="harunBian" expression="3000"/>
+                            <assign variable="totharBian" expression="jumlunBian*harunBian"/>
+                            <assign variable="distamBian" expression="totharBian*0"/>
+                            <output expression="&quot;Jadi total harga sebesar &quot; &amp;totharbian&amp; &quot; dan mendapatkan diskon tambahan sebesar &quot; &amp;distambian" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <if expression="jumlunBian&gt;100">
+                <then>
+                    <assign variable="diskonbian" expression="totharBian*0.1"/>
+                    <output expression="&quot;Karena pembelian unit kamu lebih besar sama dengan 100 kamu mendapatkan diskon sebesar 10%: &quot; &amp;diskonbian" newline="True"/>
+                </then>
+                <else>
+                    <assign variable="diskonbian" expression="0"/>
+                    <output expression="&quot;Karena pembelian unit kurang dari 100 kamu tidak mendapatkan diskon &quot; &amp;diskonbian" newline="True"/>
+                </else>
+            </if>
+            <assign variable="totdisBian" expression="diskonBian+distamBian"/>
+            <output expression="&quot;Jadi total diskon yang kamu peroleh sebesar :&quot; &amp;totdisBian" newline="True"/>
+            <assign variable="jmltotalBian" expression="totharBian-totdisBian"/>
+            <output expression="&quot;Jadi total yang harus dibayar sebesar: &quot; &amp;jmltotalBian" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
