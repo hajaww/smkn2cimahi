@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="RPL"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-13 09:45:22 PM"/>
+        <attribute name="created" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMTAtMTM7MDg6MTk6NTkgUE07MjMwMw=="/>
+        <attribute name="edited" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMTAtMTM7MDk6NDU6MjIgUE07MjsyNDAy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="awal, akhir, perhari, hari, total" type="Integer" array="False" size=""/>
+            <assign variable="awal" expression="50000"/>
+            <assign variable="perhari" expression="10000"/>
+            <assign variable="akhir" expression="awal"/>
+            <assign variable="Total" expression="Awal"/>
+            <output expression="&quot;Hari ke 1 &quot; &amp;awal" newline="True"/>
+            <for variable="hari" start="2" end="5" direction="inc" step="1">
+                <assign variable="akhir" expression="akhir+perhari"/>
+                <assign variable="Total" expression="Total+akhir"/>
+                <output expression="&quot;Hari ke &quot; &amp;hari &amp; &quot; Rp. &quot; &amp;akhir&amp; &quot; ( &quot; &amp;total&amp; &quot; ) &quot;" newline="True"/>
+            </for>
+            <output expression="&quot; Jadi total penegluaran nya sebesar &quot; &amp;total&amp; &quot; dan harga hari ke 1 adalah &quot; &amp;awal" newline="True"/>
+            <assign variable="akhir" expression="60000"/>
+            <assign variable="akhir" expression="70000"/>
+            <assign variable="akhir" expression="80000"/>
+            <assign variable="akhir" expression="90000"/>
+        </body>
+    </function>
+</flowgorithm>

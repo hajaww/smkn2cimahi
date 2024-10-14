@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="RPL"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-13 06:48:28 PM"/>
+        <attribute name="created" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMTAtMTM7MDU6NDg6NDggUE07MjMwMA=="/>
+        <attribute name="edited" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMTAtMTM7MDY6NDg6MjggUE07MjsyNDA4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nama" type="String" array="False" size=""/>
+            <declare name="nomor" type="Integer" array="False" size=""/>
+            <for variable="nomor" start="1" end="20" direction="inc" step="1">
+                <output expression="nomor&amp;&quot;.Faeyza&quot;" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="RPL"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-13 07:11:45 PM"/>
+        <attribute name="created" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMTAtMTM7MDY6NDk6MjUgUE07MjI5Nw=="/>
+        <attribute name="edited" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMTAtMTM7MDY6NTE6MjYgUE07MjtSUEw7UENfMTktUlBMXzI7MjAyNC0wOC0yNzswOToxNDo1MSBBTTsyR2FuamlsIEdlbmFwIElGLmZwcmc7NjYyOA=="/>
+        <attribute name="edited" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMTAtMTM7MDc6MTE6NDUgUE07MTsyMzk3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="angka" type="Integer" array="False" size=""/>
+            <for variable="angka" start="1" end="20" direction="inc" step="1">
+                <if expression="angka%2=0">
+                    <then>
+                        <output expression="Angka&amp; &quot;Bilangan Genap&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <output expression="Angka&amp; &quot;Bilangan Ganjil&quot;" newline="True"/>
+                    </else>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
