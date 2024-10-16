@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="RPL"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-14 07:43:07 PM"/>
+        <attribute name="created" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMTAtMTQ7MDc6MTA6NTIgUE07MjI4Nw=="/>
+        <attribute name="edited" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMTAtMTQ7MDc6NDM6MDcgUE07NTsyNDA1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="bintangBian, BintangBian2, BintangBianTinggi, BintangBianTinggi2" type="Integer" array="False" size=""/>
+            <output expression="&quot;Cetak Bintang&quot;" newline="True"/>
+            <output expression="&quot;Panjang: &quot;" newline="True"/>
+            <input variable="BintangBian"/>
+            <output expression="&quot;Tinggi nya berapa: &quot;" newline="True"/>
+            <input variable="BintangBianTinggi"/>
+            <for variable="BintangBianTinggi2" start="1" end="BintangBianTinggi" direction="inc" step="1">
+                <for variable="BintangBian2" start="1" end="BintangBian" direction="inc" step="1">
+                    <output expression="&quot;*&quot;" newline="False"/>
+                </for>
+                <output expression="&quot;&quot;" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="RPL"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-14 08:01:49 PM"/>
+        <attribute name="created" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMTAtMTQ7MDc6NTg6MjkgUE07MjMwMw=="/>
+        <attribute name="edited" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMTAtMTQ7MDg6MDA6NDcgUE07MjtSUEw7UENfMTktUlBMXzI7MjAyNC0xMC0xNDswNzo0NjoxNCBQTTtNRmFleXphX0JpbnRhbmdTZWdpM18xNTEwMjQuZnByZzs3NjE1"/>
+        <attribute name="edited" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMTAtMTQ7MDg6MDE6NDkgUE07MjsyNDAz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="aBian, bBian, cBian" type="Integer" array="False" size=""/>
+            <output expression="&quot;Cetak Bintang&quot;" newline="True"/>
+            <output expression="&quot;Tinggi&quot;" newline="True"/>
+            <input variable="BBian"/>
+            <for variable="aBian" start="bBian" end="1" direction="dec" step="1">
+                <for variable="Cbian" start="aBian" end="1" direction="dec" step="1">
+                    <output expression="&quot;*&quot;" newline="False"/>
+                </for>
+                <output expression="&quot;&quot;" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

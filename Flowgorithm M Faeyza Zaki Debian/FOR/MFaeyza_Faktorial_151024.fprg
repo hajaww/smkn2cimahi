@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="RPL"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-14 06:05:09 PM"/>
+        <attribute name="created" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMTAtMTQ7MDU6MDY6NTQgUE07MjI5Mg=="/>
+        <attribute name="edited" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMTAtMTQ7MDY6MDU6MDkgUE07MzsyNDAy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="xBian, yBian, totalBian" type="Integer" array="False" size=""/>
+            <output expression="&quot;Hitung Faktorial&quot;" newline="True"/>
+            <output expression="&quot;Masukan nilai akhir Faktorial&quot;" newline="True"/>
+            <input variable="xBian"/>
+            <assign variable="totalBian" expression="1"/>
+            <for variable="yBian" start="1" end="xBian" direction="inc" step="1">
+                <assign variable="totalBian" expression="TotalBian * yBian"/>
+                <output expression="ybian" newline="False"/>
+                <if expression="yBian=xbian">
+                    <then>
+                        <output expression="&quot; = &quot;" newline="False"/>
+                    </then>
+                    <else>
+                        <output expression="&quot; x &quot;" newline="False"/>
+                    </else>
+                </if>
+            </for>
+            <output expression="&quot;&quot;" newline="True"/>
+            <output expression="&quot;Hasil faktorial dari &quot; &amp;xBian&amp;  &quot; adalah &quot; &amp;TotalBian" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

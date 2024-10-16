@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="RPL"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-14 05:05:24 PM"/>
+        <attribute name="created" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMTAtMTQ7MDQ6Mzc6MjIgUE07MjI5MA=="/>
+        <attribute name="edited" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMTAtMTQ7MDU6MDU6MjQgUE07Mzk7MjQ1NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="iBian, nbian" type="Integer" array="False" size=""/>
+            <for variable="iBian" start="3" end="1" direction="dec" step="1">
+                <assign variable="nBian" expression="Ibian-1"/>
+                <if expression="nBian=0">
+                    <then>
+                        <output expression="&quot;tekotekkotekkotek anak ayam turun &quot; &amp; iBian&amp; &quot; mati satu tinggal induknya&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;tekotekkotekkotek anak ayam turun &quot; &amp;iBian&amp; &quot; mati satu tinggal lah &quot; &amp;nBian" newline="True"/>
+                    </else>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

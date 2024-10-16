@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="RPL"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-14 07:08:37 PM"/>
+        <attribute name="created" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMTAtMTQ7MDY6NTU6MjYgUE07MjI5Ng=="/>
+        <attribute name="edited" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMTAtMTQ7MDc6MDg6MzcgUE07NjsyNDEw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="WaktuBian" type="Integer" array="False" size=""/>
+            <output expression="&quot;Roket akan meluncur pada hitungan ke: &quot;" newline="True"/>
+            <input variable="WaktuBian"/>
+            <for variable="waktuBian" start="waktuBian" end="1" direction="dec" step="1">
+                <output expression="WaktuBian" newline="True"/>
+            </for>
+            <output expression="&quot;Roket Meluncur&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

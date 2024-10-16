@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="RPL"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-14 06:55:21 PM"/>
+        <attribute name="created" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMTAtMTQ7MDU6NDk6MTYgUE07MjI5Nw=="/>
+        <attribute name="edited" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMTAtMTQ7MDU6NTM6MDUgUE07MjtSUEw7UENfMTktUlBMXzI7MjAyNC0xMC0xMzswNjo0OToyNSBQTTtGT1JHYW5qaWxHZW5hcF8xNDEwMjQuZnByZzs3MDA1"/>
+        <attribute name="edited" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMTAtMTQ7MDY6MDE6NDcgUE07MTtSUEw7UENfMTktUlBMXzI7MjAyNC0xMC0xNDswNTowNjo1NCBQTTtNRmFleXphX0Zha3RvcmlhbF8xNTEwMjQuZnByZzs3Mzg2"/>
+        <attribute name="edited" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMTAtMTQ7MDY6NTU6MjEgUE07MzsyNDAx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="angkaBian, angka2Bian, TotalBiangenap, TotalBiangnjil" type="Integer" array="False" size=""/>
+            <output expression="&quot;Masukan batas angka terkahir: &quot;" newline="True"/>
+            <input variable="angkaBian"/>
+            <assign variable="Angka2Bian" expression="angkaBian"/>
+            <assign variable="totalBiangenap" expression="0"/>
+            <assign variable="totalBiangnjil" expression="0"/>
+            <for variable="AngkaBian" start="1" end="Angka2Bian" direction="inc" step="1">
+                <if expression="angkaBian%2=0">
+                    <then>
+                        <assign variable="totalBiangenap" expression="TotalBiangenap + angkaBian"/>
+                    </then>
+                    <else>
+                        <assign variable="totalBiangnjil" expression="TotalBiangnjil + angkaBian"/>
+                    </else>
+                </if>
+            </for>
+            <output expression="&quot;Bilangan Genap Hasil nya adalah &quot; &amp;TotalBiangenap" newline="True"/>
+            <output expression="&quot;Bilangan Ganjil Hasil nya adalah &quot; &amp;TotalBianGnjil" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
