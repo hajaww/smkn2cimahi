@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="RPL"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-29 11:55:06 AM"/>
+        <attribute name="created" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMTAtMjk7MTA6MzI6NTYgQU07MjI4MA=="/>
+        <attribute name="edited" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMTAtMjk7MTE6NTU6MDYgQU07NjsyMzk0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="BianMenu, HargaBian, JmlBrgBian, TotalHrgaBian, biandiskon, totalbayarbian" type="Integer" array="False" size=""/>
+            <declare name="NamaBian, pilihanBian, biankembali" type="String" array="False" size=""/>
+            <assign variable="totalhrgabian" expression="0"/>
+            <assign variable="Namabian" expression="&quot;kosong&quot;"/>
+            <assign variable="JmlBrgBian" expression="0"/>
+            <assign variable="hargabian" expression="0"/>
+            <do expression="biankembali == &quot;Y&quot; OR biankembali == &quot;y&quot;">
+                <do expression="BianMENU != 1 AND BianMENU != 2 AND BianMENU != 3">
+                    <output expression="&quot;KASIR&quot;&amp;ToChar(13)&amp;&#13;&#10;&quot;1. Beli Barang&quot;&amp;ToChar(13)&amp;&#13;&#10;&quot;2. Lihat Total Belanja&quot; &amp;ToChar(13)&amp;&#13;&#10;&quot;3. Keluar&quot;" newline="True"/>
+                    <input variable="BianMenu"/>
+                    <if expression="BianMenu == 1">
+                        <then>
+                            <output expression="&quot;Masukan nama barang:&quot;" newline="True"/>
+                            <input variable="NamaBIan"/>
+                            <output expression="&quot;Masukan harga barang&quot;" newline="True"/>
+                            <input variable="hargabian"/>
+                            <output expression="&quot;Masukan Jumlah Barang&quot;" newline="True"/>
+                            <input variable="JmlbrgBian"/>
+                            <assign variable="TotalhrgaBian" expression="hargabian * jmlbrgbian"/>
+                            <output expression="&quot;Berikut total belanja: &quot; &amp;TotalhrgaBian" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="BianMenu == 3">
+                                <then/>
+                                <else>
+                                    <output expression="&quot;Anda salah memilih menu&quot;" newline="True"/>
+                                    <if expression="namabian == &quot;0&quot; and hargabian == 0 and totalhrgabian == 0">
+                                        <then>
+                                            <output expression="&quot;Silahkan pilih nomer 1 dahulu&quot;" newline="True"/>
+                                            <assign variable="BianMenu" expression="4"/>
+                                        </then>
+                                        <else>
+                                            <if expression="BianMenu == 2">
+                                                <then>
+                                                    <output expression="&quot;Nama barang: &quot; &amp;namabian &amp;tochar(13)&amp;&#13;&#10;&quot;Harga Barang: &quot; &amp;hargabian &amp;tochar(13)&amp;&#13;&#10;&quot;Jumlah Barang: &quot; &amp;Jmlbrgbian &amp;tochar(13)&amp;&#13;&#10;&quot;Total harga sebelum diskon: &quot; &amp;totalhrgabian" newline="True"/>
+                                                    <if expression="totalhrgabian &gt; 500000">
+                                                        <then>
+                                                            <assign variable="biandiskon" expression="totalhrgabian * 0.1"/>
+                                                        </then>
+                                                        <else>
+                                                            <assign variable="biandiskon" expression="0"/>
+                                                        </else>
+                                                    </if>
+                                                    <assign variable="totalbayarbian" expression="totalhrgabian - biandiskon"/>
+                                                    <output expression="&quot;Total harga setelah diskon: &quot; &amp;totalbayarbian" newline="True"/>
+                                                </then>
+                                                <else/>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </do>
+                <if expression="BianMenu != 3">
+                    <then>
+                        <do expression="Biankembali != &quot;Y&quot; and Biankembali != &quot;y&quot; and&#13;&#10;Biankembali != &quot;t&quot; and Biankembali != &quot;T&quot;">
+                            <output expression="&quot;apakah ingin diulang atau tidak (y/t)&quot;" newline="True"/>
+                            <input variable="Biankembali"/>
+                            <if expression="Biankembali != &quot;Y&quot; and Biankembali != &quot;y&quot; and&#13;&#10;Biankembali != &quot;t&quot; and Biankembali != &quot;T&quot;">
+                                <then>
+                                    <output expression="&quot;Pilihan hanya ada y atau t&quot;" newline="True"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </do>
+                    </then>
+                    <else>
+                        <assign variable="biankembali" expression="&quot;t&quot;"/>
+                    </else>
+                </if>
+            </do>
+            <output expression="&quot;Terimakasih sudah menggunakan aplikasi kami&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

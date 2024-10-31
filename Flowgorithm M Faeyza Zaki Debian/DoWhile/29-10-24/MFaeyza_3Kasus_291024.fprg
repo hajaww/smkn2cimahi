@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="RPL"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-29 10:04:13 AM"/>
+        <attribute name="created" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMTAtMjk7MDg6MzY6MzYgQU07MjI4OQ=="/>
+        <attribute name="edited" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMTAtMjk7MDg6NDY6MzkgQU07MjtSUEw7UENfMTktUlBMXzI7MjAyNC0xMC0xNDswNTowNjo1NCBQTTtNRmFleXphX0Zha3RvcmlhbF8xNTEwMjQuZnByZzs3Mzkw"/>
+        <attribute name="edited" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMTAtMjk7MDg6NDk6NTEgQU07MTtSUEw7UENfMTktUlBMXzI7MjAyNC0xMC0xNDswNTo0OToxNiBQTTtNRmFleXphX1Blbmp1bWxhaGFuR2FuamlsR2VuYXBfMTUxMDI0LmZwcmc7ODY5Mw=="/>
+        <attribute name="edited" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMTAtMjk7MTA6MDQ6MTMgQU07MzsyMzgy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="BianPilihan, Biankembali" type="String" array="False" size=""/>
+            <declare name="xBian, yBian, totalBian, angkaBian, angka2Bian, TotalBiangenap, TotalBiangnjil, awalBian, gbian, akhirBian, totalBianpenjumlahan" type="Integer" array="False" size=""/>
+            <do expression="BianKembali == &quot;y&quot; OR BianKembali == &quot;Y&quot;">
+                <do expression="BianKembali != &quot;y&quot; AND BianKembali != &quot;Y&quot; AND&#13;&#10;BianKembali != &quot;t&quot; AND BianKembali != &quot;T&quot;">
+                    <do expression="Bianpilihan != &quot;1&quot; AND Bianpilihan != &quot;2&quot; AND Bianpilihan != &quot;3&quot;">
+                        <output expression="&quot;Tampilkan menu pilihan&quot; &amp;Tochar(13)&amp;&#13;&#10;&quot;1. Hitung Faktorial &quot; &amp;Tochar(13)&amp;&#13;&#10;&quot;2. Tampilkan deret bilangan genap dan jumlahnya &quot; &amp;Tochar(13)&amp;&#13;&#10;&quot;3. Hitung penjumlahan bilangan &quot;" newline="True"/>
+                        <input variable="Bianpilihan"/>
+                        <if expression="BianPilihan == &quot;1&quot;">
+                            <then>
+                                <output expression="&quot;Hitung Faktorial&quot;" newline="True"/>
+                                <output expression="&quot;Masukan nilai akhir Faktorial&quot;" newline="True"/>
+                                <input variable="xBian"/>
+                                <assign variable="totalBian" expression="1"/>
+                                <for variable="yBian" start="1" end="xBian" direction="inc" step="1">
+                                    <assign variable="totalBian" expression="TotalBian * yBian"/>
+                                    <output expression="ybian" newline="False"/>
+                                    <if expression="yBian=xbian">
+                                        <then>
+                                            <output expression="&quot; = &quot;" newline="False"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot; x &quot;" newline="False"/>
+                                        </else>
+                                    </if>
+                                </for>
+                                <output expression="&quot;&quot;" newline="True"/>
+                                <output expression="&quot;Hasil faktorial dari &quot; &amp;xBian&amp;  &quot; adalah &quot; &amp;TotalBian" newline="True"/>
+                            </then>
+                            <else>
+                                <if expression="BianPilihan == &quot;2&quot;">
+                                    <then>
+                                        <output expression="&quot;Masukan batas angka terkahir: &quot;" newline="True"/>
+                                        <input variable="angkaBian"/>
+                                        <assign variable="Angka2Bian" expression="angkaBian"/>
+                                        <assign variable="totalBiangenap" expression="0"/>
+                                        <assign variable="totalBiangnjil" expression="0"/>
+                                        <for variable="AngkaBian" start="1" end="Angka2Bian" direction="inc" step="1">
+                                            <if expression="angkaBian%2=0">
+                                                <then>
+                                                    <assign variable="totalBiangenap" expression="TotalBiangenap + angkaBian"/>
+                                                </then>
+                                                <else>
+                                                    <assign variable="totalBiangnjil" expression="TotalBiangnjil + angkaBian"/>
+                                                </else>
+                                            </if>
+                                        </for>
+                                        <output expression="&quot;Bilangan Genap Hasil nya adalah &quot; &amp;TotalBiangenap" newline="True"/>
+                                        <output expression="&quot;Bilangan Ganjil Hasil nya adalah &quot; &amp;TotalBianGnjil" newline="True"/>
+                                    </then>
+                                    <else>
+                                        <if expression="BianPilihan == &quot;3&quot;">
+                                            <then>
+                                                <output expression="&quot;Masukan Nilai awal penjumlahan&quot;" newline="True"/>
+                                                <input variable="awalbian"/>
+                                                <output expression="&quot;Masukan nilai akhir Penjumlahan Bilangan&quot;" newline="True"/>
+                                                <input variable="akhirBian"/>
+                                                <assign variable="totalBianpenjumlahan" expression="0"/>
+                                                <for variable="gBian" start="awalbian" end="akhirbian" direction="inc" step="1">
+                                                    <assign variable="totalBianpenjumlahan" expression="totalBianpenjumlahan+gbian"/>
+                                                    <output expression="gbian" newline="False"/>
+                                                    <if expression="gbian=akhirBian">
+                                                        <then>
+                                                            <output expression="&quot; = &quot;" newline="False"/>
+                                                        </then>
+                                                        <else>
+                                                            <output expression="&quot; + &quot;" newline="False"/>
+                                                        </else>
+                                                    </if>
+                                                </for>
+                                                <output expression="&quot;&quot;" newline="False"/>
+                                                <output expression="totalBianpenjumlahan" newline="True"/>
+                                            </then>
+                                            <else>
+                                                <output expression="&quot;Hanya pilih (1-3)&quot;" newline="True"/>
+                                            </else>
+                                        </if>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                    </do>
+                    <output expression="&quot;Apakah anda ingin kembali ke menu awal? (y/t)&quot;" newline="True"/>
+                    <input variable="Biankembali"/>
+                    <if expression="BianKembali != &quot;y&quot; AND BianKembali != &quot;Y&quot; AND&#13;&#10;BianKembali != &quot;t&quot; AND BianKembali != &quot;T&quot;">
+                        <then>
+                            <output expression="&quot;Hanya pilih (Y/T)&quot;" newline="True"/>
+                        </then>
+                        <else/>
+                    </if>
+                </do>
+            </do>
+            <output expression="&quot;Terimakasih sudah menggunakan aplikasi kami&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

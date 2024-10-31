@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="RPL"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-29 08:34:33 AM"/>
+        <attribute name="created" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMTAtMjk7MDg6MDA6MTkgQU07MjI4MQ=="/>
+        <attribute name="edited" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMTAtMjk7MDg6MzQ6MzMgQU07MjsyMzkz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="BianCek, Bianpilihan" type="String" array="False" size=""/>
+            <do expression="BianPilihan == &quot;y&quot; OR Bianpilihan == &quot;Y&quot;">
+                <do expression="Biancek != &quot;1&quot; AND Biancek != &quot;2&quot; AND Biancek != &quot;3&quot;">
+                    <output expression="&quot;Pilih 1 untuk cek pulsa &quot; &amp;toChar(13)&amp;&#13;&#10;&quot;Pilih 2 untuk cek kuota &quot; &amp;toChar(13)&amp;&#13;&#10;&quot;Pilih 3 untuk cek masa aktif&quot;" newline="True"/>
+                    <input variable="biancek"/>
+                    <if expression="biancek == &quot;1&quot;">
+                        <then>
+                            <output expression="&quot;Pulsa anda adalah Rp. 0,-&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="biancek == &quot;2&quot;">
+                                <then>
+                                    <output expression="&quot;Kuota anda 1GB&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="biancek == &quot;3&quot;">
+                                        <then>
+                                            <output expression="&quot;Masa Aktif sampai 29 oktober 2024&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;Anda salah memilih menu pilih (1-3)&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </do>
+                <do expression="BianPilihan != &quot;y&quot; AND BianPilihan != &quot;Y&quot; AND&#13;&#10;BianPilihan != &quot;t&quot; AND BianPilihan != &quot;T&quot;">
+                    <output expression="&quot;Apakah anda ingin kembali ke menu utama? (y/t)&quot;" newline="True"/>
+                    <input variable="BianPilihan"/>
+                    <if expression="BianPilihan != &quot;y&quot; AND BianPilihan != &quot;Y&quot; AND&#13;&#10;BianPilihan != &quot;t&quot; AND BianPilihan != &quot;T&quot;">
+                        <then>
+                            <output expression="&quot;Hanya pilih (Y/T)&quot;" newline="True"/>
+                        </then>
+                        <else/>
+                    </if>
+                </do>
+            </do>
+            <output expression="&quot;Terimakasih Sudah menggunakan aplikasi kami&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
