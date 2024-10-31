@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="RPL"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-21 11:17:05 AM"/>
+        <attribute name="created" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMTAtMjE7MTA6MjY6MjUgQU07MjI3MQ=="/>
+        <attribute name="edited" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMTAtMjE7MTE6MTc6MDUgQU07MTsyMzc4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="TinggiBian, PanjangBian" type="Integer" array="False" size=""/>
+            <output expression="&quot;Cetak Bintang&quot;" newline="True"/>
+            <output expression="&quot;Tinggi&quot;" newline="True"/>
+            <input variable="TinggiBian"/>
+            <while expression="TinggiBian &gt;= 1">
+                <assign variable="PanjangBian" expression="TinggiBian"/>
+                <assign variable="TinggiBian" expression="TinggiBian-1"/>
+                <while expression="PanjangBian &gt;= 1">
+                    <assign variable="panjangBian" expression="panjangBian-1"/>
+                    <output expression="&quot;*&quot;" newline="False"/>
+                </while>
+                <output expression="&quot;*&quot;" newline="True"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
