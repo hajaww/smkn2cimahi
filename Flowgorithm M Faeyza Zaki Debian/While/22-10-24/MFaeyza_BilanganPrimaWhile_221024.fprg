@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="RPL"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-22 10:21:18 AM"/>
+        <attribute name="created" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMTAtMjI7MDk6MTI6MTggQU07MjI3Nw=="/>
+        <attribute name="edited" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMTAtMjI7MTA6MjE6MTggQU07MTsyMzc3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nilaiawal, nilaiakhir, pembagi, cek" type="Integer" array="False" size=""/>
+            <output expression="&quot;Masukan nilai awal&quot;" newline="True"/>
+            <input variable="nilaiawal"/>
+            <output expression="&quot;Masukan Nilai Akhir&quot;" newline="True"/>
+            <input variable="Nilaiakhir"/>
+            <while expression="nilaiawal &lt;= nilaiakhir">
+                <assign variable="pembagi" expression="1"/>
+                <assign variable="cek" expression="0"/>
+                <while expression="pembagi &lt;= nilaiawal">
+                    <if expression="nilaiawal%pembagi==0">
+                        <then>
+                            <assign variable="cek" expression="cek+1"/>
+                        </then>
+                        <else/>
+                    </if>
+                    <assign variable="pembagi" expression="pembagi+1"/>
+                </while>
+                <if expression="cek==2">
+                    <then>
+                        <output expression="nilaiawal" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="nilaiawal" expression="nilaiawal+1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

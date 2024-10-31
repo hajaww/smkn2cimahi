@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="RPL"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-22 11:12:37 AM"/>
+        <attribute name="created" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMTAtMjI7MTA6Mzc6MzQgQU07MjI3NA=="/>
+        <attribute name="edited" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMTAtMjI7MTE6MTI6MzcgQU07MTsyMzc5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Uang, pec100, pec50, pec20, pec10, pec5, pec2, pec1" type="Integer" array="False" size=""/>
+            <output expression="&quot;Masukan Uang&quot;" newline="True"/>
+            <input variable="Uang"/>
+            <assign variable="pec100" expression="uang/100000"/>
+            <assign variable="uang" expression="uang%100000"/>
+            <if expression="pec100&gt;0">
+                <then>
+                    <output expression="&quot;Pecahan 100ribu sebanyak &quot; &amp;pec100" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <assign variable="pec50" expression="uang/50000"/>
+            <assign variable="uang" expression="uang%50000"/>
+            <if expression="pec50&gt;0">
+                <then>
+                    <output expression="&quot;Pecahan 50ribu sebanyak &quot; &amp;pec50" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <assign variable="pec20" expression="uang/20000"/>
+            <assign variable="uang" expression="uang%20000"/>
+            <if expression="pec20&gt;0">
+                <then>
+                    <output expression="&quot;Pecahan 20ribu sebanyak &quot; &amp;pec20" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <assign variable="pec10" expression="uang/10000"/>
+            <assign variable="uang" expression="uang%10000"/>
+            <if expression="pec10&gt;0">
+                <then>
+                    <output expression="&quot;Pecahan 10ribu sebanyak &quot; &amp;pec10" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <assign variable="pec5" expression="uang/5000"/>
+            <assign variable="uang" expression="uang%5000"/>
+            <if expression="pec5&gt;0">
+                <then>
+                    <output expression="&quot;Pecahan 5ribu sebanyak &quot; &amp;pec5" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <assign variable="pec2" expression="uang/2000"/>
+            <assign variable="uang" expression="uang%2000"/>
+            <if expression="pec2&gt;0">
+                <then>
+                    <output expression="&quot;Pecahan 2ribu sebanyak &quot; &amp;pec2" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <assign variable="pec1" expression="uang/1000"/>
+            <assign variable="uang" expression="uang%1000"/>
+            <if expression="pec1&gt;0">
+                <then>
+                    <output expression="&quot;Pecahan seribu sebanyak &quot; &amp;pec1" newline="True"/>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

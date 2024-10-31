@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="RPL"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-22 08:58:34 AM"/>
+        <attribute name="created" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMTAtMjI7MDg6MzE6MjQgQU07MjI3NA=="/>
+        <attribute name="edited" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMTAtMjI7MDg6MzU6NDQgQU07NDtSUEw7UENfMTktUlBMXzI7MjAyNC0xMC0xNDswNTo0OToxNiBQTTtNRmFleXphX1Blbmp1bWxhaGFuR2FuamlsR2VuYXBfMTUxMDI0LmZwcmc7ODY4Ng=="/>
+        <attribute name="edited" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMTAtMjI7MDg6NTg6MzQgQU07MTsyMzky"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="angkaBian, angka2Bian, TotalBianGenap, TotalBiangnjil" type="Integer" array="False" size=""/>
+            <output expression="&quot;Masukan Angka&quot;" newline="True"/>
+            <input variable="AngkaBian"/>
+            <assign variable="TotalBiangenap" expression="0"/>
+            <assign variable="TotalBiangnjil" expression="0"/>
+            <assign variable="angka2bian" expression="1"/>
+            <while expression="angka2bian &lt;= angkabian">
+                <if expression="angkabian%2=0">
+                    <then>
+                        <assign variable="totalBiangenap" expression="TotalBiangenap + angkaBian"/>
+                    </then>
+                    <else>
+                        <assign variable="totalBiangnjil" expression="TotalBiangnjil + angkaBian"/>
+                    </else>
+                </if>
+                <assign variable="angkabian" expression="angkabian-angka2bian"/>
+            </while>
+            <output expression="&quot;Bilangan Genap Hasil nya adalah &quot; &amp;TotalBiangenap" newline="True"/>
+            <output expression="&quot;Bilangan Ganjil Hasil nya adalah &quot; &amp;TotalBianGnjil" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

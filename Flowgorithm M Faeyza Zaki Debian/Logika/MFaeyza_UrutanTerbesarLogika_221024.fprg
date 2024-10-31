@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="RPL"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-22 11:41:25 AM"/>
+        <attribute name="created" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMTAtMjI7MTE6MTQ6NTcgQU07MjI3NQ=="/>
+        <attribute name="edited" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMTAtMjI7MTE6MTg6MTYgQU07MTtSUEw7UENfMTktUlBMXzI7MjAyNC0xMC0wNjswNjozMjo1NCBQTTtNIEZhZXl6YV9VcnV0YW5CaWxhbmdhbl8wNzEwMjQuZnByZzs3OTE0"/>
+        <attribute name="edited" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMTAtMjI7MTE6NDE6MjUgQU07MTsyMzc4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="angka1, angka2, angka3" type="Integer" array="False" size=""/>
+            <output expression="&quot;Masukan Nilai Pertama: &quot;" newline="True"/>
+            <input variable="Angka1"/>
+            <output expression="&quot;Masukan Nilai Kedua: &quot;" newline="True"/>
+            <input variable="Angka2"/>
+            <output expression="&quot;Masukan Nilai Terakhir: &quot;" newline="True"/>
+            <input variable="Angka3"/>
+            <if expression="angka1&lt;angka2">
+                <then>
+                    <if expression="angka2&lt;angka3">
+                        <then>
+                            <output expression="&quot;angka terbesar &quot; &amp;angka3" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Angka terbesar &quot; &amp;angka2" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="angka1&gt;angka3">
+                        <then>
+                            <output expression="&quot;Angka Terbesar &quot; &amp;angka1" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Angka terbesar &quot; &amp;angka3" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

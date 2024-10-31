@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="RPL"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-22 08:57:59 AM"/>
+        <attribute name="created" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMTAtMjI7MDg6MTU6NTQgQU07MjI3OQ=="/>
+        <attribute name="edited" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMTAtMjI7MDg6NTc6NTkgQU07MTsyMzk4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Ayam, a" type="Integer" array="False" size=""/>
+            <output expression="&quot;Berapa banyak anak ayam&quot;" newline="True"/>
+            <input variable="Ayam"/>
+            <assign variable="a" expression="1"/>
+            <while expression="Ayam&gt;a">
+                <output expression="&quot;Tekotekotekotek anak ayam turun &quot; &amp;ayam&amp; &quot; mati 1 tinggal &quot; &amp;ayam-1" newline="True"/>
+                <assign variable="ayam" expression="ayam-1"/>
+            </while>
+            <output expression="&quot;Tekotekotekotek anak ayam turun &quot; &amp;ayam&amp; &quot; mati 1 tinggal induknya&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
