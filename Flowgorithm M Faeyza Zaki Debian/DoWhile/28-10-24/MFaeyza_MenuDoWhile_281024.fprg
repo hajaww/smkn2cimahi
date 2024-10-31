@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="RPL"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-28 12:02:46 PM"/>
+        <attribute name="created" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMTAtMjg7MDk6NTE6NDQgQU07MjI4NQ=="/>
+        <attribute name="edited" value="UlBMO1BDXzE5LVJQTF8yOzIwMjQtMTAtMjg7MTI6MDI6NDYgUE07Mjk7MjQ1OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="MenuBian, AlasBian, tinggiBian, rBian" type="Integer" array="False" size=""/>
+            <declare name="luaslingkaranBian, LuasSegi3Bian" type="Real" array="False" size=""/>
+            <declare name="PilihanBian" type="String" array="False" size=""/>
+            <do expression="pilihanBian = &quot;y&quot; OR pilihanBian = &quot;Y&quot;">
+                <do expression="MenuBian &gt; 2 OR MenuBian &lt; 1">
+                    <output expression="&quot;MENU &quot;&amp; tochar(13) &amp;&#13;&#10;&quot;1. Luas Segitiga &quot; &amp; tochar(13) &amp;&#13;&#10;&quot;2. Luas Lingkaran &quot; &amp; tochar(13) &amp;&#13;&#10;&quot;Pilih Menu (1/2). &quot;" newline="True"/>
+                    <input variable="MenuBian"/>
+                    <if expression="menuBian == 1">
+                        <then>
+                            <output expression="&quot;Kamu memilih luas segitiga dengan rumus : 1/2 * alas * tinggi &quot; &amp;toChar(13)&amp;&#13;&#10;&quot;Masukan nilai alas&quot;" newline="True"/>
+                            <input variable="alasBian"/>
+                            <output expression="&quot;Masukan nilai tinggi&quot;" newline="True"/>
+                            <input variable="tinggiBian"/>
+                            <assign variable="Luassegi3Bian" expression="1/2 * alasBian * tinggiBian"/>
+                            <output expression="&quot;Jadi rumus luas seigtiga adalah: &quot; &amp;Tochar(13)&amp;&#13;&#10;&quot;1/2 * &quot; &amp;alasBian&amp; &quot; * &quot; &amp;tinggiBian&amp;  &quot; = &quot; &amp;luassegi3Bian" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="menuBian == 2">
+                                <then>
+                                    <output expression="&quot;Kamu memilih luas lingkaran dengan rumus : phi * r * r &quot; &amp;toChar(13)&amp;&#13;&#10;&quot;Masukan nilai r(jari-jari)&quot;" newline="True"/>
+                                    <input variable="rBian"/>
+                                    <assign variable="LuaslingkaranBian" expression="3.14 * rBian * rBian"/>
+                                    <output expression="&quot;Jadi rumus luas lingkaran adalah: &quot; &amp;Tochar(13)&amp;&#13;&#10;&quot;3,14 * &quot; &amp;rBian&amp; &quot; * &quot; &amp;rBian&amp;  &quot; = &quot; &amp;luaslingkaranBian" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Pilih (1/2)&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </do>
+                <do expression="pilihanBian != &quot;Y&quot; AND pilihanBian != &quot;y&quot; AND PilihanBian != &quot;T&quot; AND pilihanBian != &quot;t&quot;">
+                    <output expression="&quot;Apakah akan diulang ? (y/t)&quot;" newline="True"/>
+                    <input variable="PilihanBian"/>
+                    <if expression="pilihanBian != &quot;Y&quot; AND pilihanBian != &quot;y&quot; AND PilihanBian != &quot;T&quot; AND pilihanBian != &quot;t&quot;">
+                        <then>
+                            <output expression="&quot;Pilihan hanya (Y/T)&quot;" newline="True"/>
+                        </then>
+                        <else/>
+                    </if>
+                </do>
+            </do>
+        </body>
+    </function>
+</flowgorithm>
