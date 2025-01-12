@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="RPL"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-01-06 10:39:52 AM"/>
+        <attribute name="created" value="UlBMO1BDXzEyLVJQTF8yOzIwMjUtMDEtMDY7MDk6NTA6MjggQU07MjI3Ng=="/>
+        <attribute name="edited" value="UlBMO1BDXzEyLVJQTF8yOzIwMjUtMDEtMDY7MTA6MDE6MDIgQU07MjtSUEw7UENfMTktUlBMXzI7MjAyNC0xMC0yMjsxMDozNzozNCBBTTtNRmFleXphX0xlbWJhclVhbmdMb2dpa2FfMjIxMDI0LmZwcmc7Nzk5Nw=="/>
+        <attribute name="edited" value="UlBMO1BDXzEyLVJQTF8yOzIwMjUtMDEtMDY7MTA6Mzk6NTIgQU07MjsyMzgx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nominal, sisa, lembar" type="Integer" array="False" size=""/>
+            <assign variable="lembar" expression="0"/>
+            <input variable="nominal"/>
+            <while expression="nominal &gt;= 50000">
+                <assign variable="sisa" expression="0"/>
+                <if expression="nominal &gt;= 100000">
+                    <then>
+                        <assign variable="lembar" expression="nominal/100000"/>
+                        <assign variable="sisa" expression="nominal%100000"/>
+                        <output expression="&quot;Lembar: Rp.100.000 = &quot; &amp;lembar" newline="True"/>
+                    </then>
+                    <else>
+                        <assign variable="lembar" expression="nominal/50000"/>
+                        <assign variable="sisa" expression="nominal%50000"/>
+                        <output expression="&quot;Lembar: Rp. 50.000 = &quot; &amp;lembar" newline="True"/>
+                    </else>
+                </if>
+                <assign variable="nominal" expression="sisa"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
