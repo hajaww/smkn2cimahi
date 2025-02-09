@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Nama</title>
+</head>
+<body>
+    <h2>Masukan Nama-Nama</h2>
+    <form action="/result" method="POST">
+        {% for i in range(jumlah_nama) %}
+            <label for="nama{{ i }}">Nama {{ i + 1 }}:</label><br>
+            <input type="text" id="nama{{ i }}" name="nama" required>
+            <br><br>
+        {% endfor %}
+        <button type="submit">Tampilkan Hasil</button>
+    </form>
+</body>
+</html>
